@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/TestLangWithRuntime/TestLangWithRuntime.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TestLangWithRuntime/runtime/TestLangWithRuntime.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TestLanguage/TestLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ANTLR.persistence.build/ANTLR.persistence.build.msd" folder="" />

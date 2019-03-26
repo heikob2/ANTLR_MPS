@@ -76,7 +76,7 @@
     <node concept="1TJgyj" id="6CrG2UA1yej" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="altMappers" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="7645898506791953299" />
       <ref role="20lvS9" node="6CrG2UA1ycF" resolve="AlternativeMapper" />
     </node>

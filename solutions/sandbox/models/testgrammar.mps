@@ -4,9 +4,22 @@
   <languages>
     <use id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps" version="0" />
     <use id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR" version="3" />
+    <use id="7ffe94db-9ddd-4620-b20e-7302e076e66f" name="TestLanguage" version="-1" />
+    <use id="aa368bb7-a20d-41b1-8e2c-8638eef7cac2" name="TestLangWithRuntime" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
   </languages>
-  <imports />
+  <imports>
+    <import index="vbi9" ref="7ffe94db-9ddd-4620-b20e-7302e076e66f/i:f010101(TestLanguage/TestLanguage@descriptor)" />
+    <import index="ighi" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#aa368bb7-a20d-41b1-8e2c-8638eef7cac2(jetbrains.mps.lang.project.modules/module.TestLangWithRuntime@project_stub)" />
+  </imports>
   <registry>
+    <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
+      <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
+        <property id="2919715501613044585" name="parserCanonicalClassName" index="2In3EI" />
+        <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
+        <child id="1605361111521823532" name="language" index="3MeQx0" />
+      </concept>
+    </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
       <concept id="558881339889629829" name="org.campagnelab.ANTLR.structure.LabeledElement" flags="ng" index="gtF4r">
         <property id="558881339889843987" name="operator" index="guZid" />
@@ -42,6 +55,8 @@
         <property id="7142405419535590784" name="literal" index="1M88Tz" />
       </concept>
       <concept id="7142405419535385999" name="org.campagnelab.ANTLR.structure.Alternative" flags="ng" index="1M9qTG">
+        <property id="7891183316660196135" name="hasLabel" index="2yxwTd" />
+        <property id="7891183316658862597" name="label" index="2zsUtJ" />
         <child id="7142405419535386000" name="rhs" index="1M9qTN" />
       </concept>
       <concept id="7142405419534834022" name="org.campagnelab.ANTLR.structure.ParserRuleRef" flags="ng" index="1Mb3a5">
@@ -61,6 +76,18 @@
       </concept>
       <concept id="1539085245680655634" name="org.campagnelab.ANTLR.structure.LexerBlock" flags="ng" index="1Qzf3M">
         <child id="1539085245680655635" name="elements" index="1Qzf3N" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
+        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
+        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+      </concept>
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
+      <concept id="2469893808086079682" name="jetbrains.mps.lang.smodel.structure.LanguageIdentityBySourceModule" flags="ng" index="PFCIn">
+        <child id="2469893808086079721" name="moduleReference" index="PFCIW" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -155,6 +182,8 @@
       <node concept="1Mb3ex" id="uQAWgojc00" role="1Mb3eB">
         <node concept="1M9qTG" id="uQAWgojc02" role="1Mb3aa">
           <property role="TrG5h" value="value:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="sv" />
           <node concept="1Mb3e_" id="uQAWgojc03" role="1M9qTN">
             <node concept="3J8AN8" id="uQAWgojc04" role="1Mb3a8">
               <property role="3J8Ah3" value="SimpleValue" />
@@ -163,6 +192,8 @@
         </node>
         <node concept="1M9qTG" id="uQAWgojc05" role="1Mb3aa">
           <property role="TrG5h" value="value:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="qv" />
           <node concept="1Mb3e_" id="uQAWgojc06" role="1M9qTN">
             <node concept="3J8AN8" id="uQAWgojc07" role="1Mb3a8">
               <property role="3J8Ah3" value="QuotedValue" />
@@ -248,6 +279,19 @@
               <property role="1M88Tz" value="&quot;" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3c7qIG" id="uQAWgojdko">
+    <property role="TrG5h" value="ConvertToMPS_CSV" />
+    <property role="2In3EI" value="my.test.ABC" />
+    <ref role="3c7qJ7" node="uQAWgojaCk" resolve="CSV" />
+    <node concept="pHN19" id="uQAWgojdAC" role="3MeQx0">
+      <node concept="PFCIn" id="uQAWgojdB3" role="2V$M_3">
+        <node concept="20RdaH" id="uQAWgojdB2" role="PFCIW">
+          <property role="20Rdg5" value="aa368bb7-a20d-41b1-8e2c-8638eef7cac2" />
+          <property role="20Rdg7" value="TestLangWithRuntime" />
         </node>
       </node>
     </node>
