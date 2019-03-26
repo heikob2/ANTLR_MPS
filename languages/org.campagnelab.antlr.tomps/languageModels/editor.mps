@@ -314,6 +314,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -2490,7 +2497,7 @@
     </node>
   </node>
   <node concept="Q6S24" id="3xnxyLp3G7j">
-    <property role="TrG5h" value="LexerRuleSource_SmartReference" />
+    <property role="TrG5h" value="LexerRuleSource_SmartReference_generatedByMigrationScript" />
     <property role="3GE5qa" value="sources" />
     <ref role="aqKnT" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
     <node concept="3XHNnq" id="3xnxyLp3G7h" role="3ft7WO">
@@ -2516,7 +2523,7 @@
     <node concept="382kZG" id="3xnxyLp3G7k" role="lGtFl" />
   </node>
   <node concept="Q6S24" id="3xnxyLp3G7v">
-    <property role="TrG5h" value="LabeledElementSource_SmartReference" />
+    <property role="TrG5h" value="LabeledElementSource_SmartReference_generatedByMigrationScript" />
     <property role="3GE5qa" value="sources" />
     <ref role="aqKnT" to="3elq:4EJnNxxFvTR" resolve="LabeledElementSource" />
     <node concept="3XHNnq" id="3xnxyLp3G7t" role="3ft7WO">
@@ -2537,19 +2544,28 @@
     <node concept="382kZG" id="3xnxyLp3G7w" role="lGtFl" />
   </node>
   <node concept="Q6S24" id="3xnxyLp3G7F">
-    <property role="TrG5h" value="ChildDestination_SmartReference" />
+    <property role="TrG5h" value="ChildDestination_SmartReference_generatedByMigrationScript" />
     <property role="3GE5qa" value="destinations" />
     <ref role="aqKnT" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
     <node concept="3XHNnq" id="3xnxyLp3G7D" role="3ft7WO">
       <ref role="3XGfJA" to="3elq:4EJnNxxITri" resolve="to" />
       <node concept="1WAQ3h" id="3xnxyLp3G7E" role="1WZ6D9">
         <node concept="3clFbS" id="3xnxyLp3G7z" role="2VODD2">
-          <node concept="3clFbF" id="3xnxyLp3G7$" role="3cqZAp">
-            <node concept="2OqwBi" id="3xnxyLp3G7_" role="3clFbG">
-              <node concept="10Nm6u" id="3xnxyLp3G7C" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3xnxyLp3G7B" role="2OqNvi">
-                <ref role="37wK5l" to="k4hm:2uLbzznpwAh" resolve="name" />
+          <node concept="1X3_iC" id="j0W4OiNeGZ" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="3xnxyLp3G7$" role="8Wnug">
+              <node concept="2OqwBi" id="3xnxyLp3G7_" role="3clFbG">
+                <node concept="10Nm6u" id="3xnxyLp3G7C" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3xnxyLp3G7B" role="2OqNvi">
+                  <ref role="37wK5l" to="k4hm:2uLbzznpwAh" resolve="name" />
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="j0W4OiNeXV" role="3cqZAp">
+            <node concept="Xl_RD" id="j0W4OiNeXU" role="3clFbG">
+              <property role="Xl_RC" value="ERROR_by_ChildDestination_SmartReference_generatedByMigrationScript" />
             </node>
           </node>
         </node>
@@ -2558,19 +2574,28 @@
     <node concept="382kZG" id="3xnxyLp3G7G" role="lGtFl" />
   </node>
   <node concept="Q6S24" id="3xnxyLp3G7R">
-    <property role="TrG5h" value="PropertyDestination_SmartReference" />
+    <property role="TrG5h" value="PropertyDestination_SmartReference_generatedByMigrationScript" />
     <property role="3GE5qa" value="destinations" />
     <ref role="aqKnT" to="3elq:2uLbzznlRIg" resolve="PropertyDestination" />
     <node concept="3XHNnq" id="3xnxyLp3G7P" role="3ft7WO">
       <ref role="3XGfJA" to="3elq:2uLbzznlRIh" resolve="to" />
       <node concept="1WAQ3h" id="3xnxyLp3G7Q" role="1WZ6D9">
         <node concept="3clFbS" id="3xnxyLp3G7J" role="2VODD2">
-          <node concept="3clFbF" id="3xnxyLp3G7K" role="3cqZAp">
-            <node concept="2OqwBi" id="3xnxyLp3G7L" role="3clFbG">
-              <node concept="10Nm6u" id="3xnxyLp3G7O" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3xnxyLp3G7N" role="2OqNvi">
-                <ref role="37wK5l" to="k4hm:2uLbzznpwAh" resolve="name" />
+          <node concept="1X3_iC" id="j0W4OiL1Wr" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbF" id="3xnxyLp3G7K" role="8Wnug">
+              <node concept="2OqwBi" id="3xnxyLp3G7L" role="3clFbG">
+                <node concept="10Nm6u" id="3xnxyLp3G7O" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3xnxyLp3G7N" role="2OqNvi">
+                  <ref role="37wK5l" to="k4hm:2uLbzznpwAh" resolve="name" />
+                </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="j0W4OiL2dn" role="3cqZAp">
+            <node concept="Xl_RD" id="j0W4OiL2dm" role="3clFbG">
+              <property role="Xl_RC" value="ERROR_by_PropertyDestination_SmartReference_generatedByMigrationScript" />
             </node>
           </node>
         </node>
@@ -2579,7 +2604,7 @@
     <node concept="382kZG" id="3xnxyLp3G7S" role="lGtFl" />
   </node>
   <node concept="Q6S24" id="3xnxyLp3G86">
-    <property role="TrG5h" value="ParserRuleSource_SmartReference" />
+    <property role="TrG5h" value="ParserRuleSource_SmartReference_generatedByMigrationScript" />
     <property role="3GE5qa" value="sources" />
     <ref role="aqKnT" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
     <node concept="3XHNnq" id="3xnxyLp3G84" role="3ft7WO">
