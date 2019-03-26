@@ -73,3 +73,8 @@ action-checker/testdata/actions.json
 .gradle/
 /build/
 workspace.xml
+
+
+# -----------------------
+solutions/ANTLR.persistence.build/classes_gen/ANTLR/persistence/build/ANTLR.xml
+solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/ANTLR.xml
