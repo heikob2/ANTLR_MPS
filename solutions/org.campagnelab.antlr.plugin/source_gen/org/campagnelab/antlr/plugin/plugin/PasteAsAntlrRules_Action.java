@@ -14,7 +14,6 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.campagnelab.antlr.parsers.AntlrPaster;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.IOperationContext;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.EditableSModel;
 import jetbrains.mps.project.MPSProject;
@@ -47,12 +46,6 @@ public class PasteAsAntlrRules_Action extends BaseAction {
   protected boolean collectActionData(AnActionEvent event, final Map<String, Object> _params) {
     if (!(super.collectActionData(event, _params))) {
       return false;
-    }
-    {
-      IOperationContext p = event.getData(MPSCommonDataKeys.OPERATION_CONTEXT);
-      if (p == null) {
-        return false;
-      }
     }
     {
       SNode p = event.getData(MPSCommonDataKeys.NODE);
@@ -88,6 +81,6 @@ public class PasteAsAntlrRules_Action extends BaseAction {
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    new AntlrPaster().pasteRules(event.getData(MPSCommonDataKeys.NODE), event.getData(MPSCommonDataKeys.OPERATION_CONTEXT), event.getData(MPSCommonDataKeys.MPS_PROJECT));
+    new AntlrPaster().pasteRules(event.getData(MPSCommonDataKeys.NODE), null, event.getData(MPSCommonDataKeys.MPS_PROJECT));
   }
 }

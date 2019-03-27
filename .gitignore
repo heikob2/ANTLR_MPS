@@ -7,3 +7,75 @@ trace.info
 dependencies
 generated
 
+# -----------------------------------------------------------
+# General
+# -----------------------------------------------------------
+.ant_targets
+.DS_Store
+.metadata
+.svn
+build/
+/artifacts/
+/tmp/
+
+# -----------------------------------------------------------
+# Model Checking Results
+# -----------------------------------------------------------
+*.csv
+
+# -----------------------------------------------------------
+# Latex
+# -----------------------------------------------------------
+*.synctex.gz
+*.aux
+*.log
+*.*.synctex.gz
+*.*.aux
+*.*.log
+
+# -----------------------------------------------------------
+# IDEA
+# -----------------------------------------------------------
+.idea
+workspace.xml
+
+# -----------------------------------------------------------
+# JUNIT
+# -----------------------------------------------------------
+junitvmwatcher*.properties
+# build.properties
+TEST-*.xml
+junit*.properties
+
+# -----------------------------------------------------------
+# MPS
+# -----------------------------------------------------------
+classes_gen
+source_gen
+source_gen.caches
+test_gen
+test_gen.caches
+code/languages/*/*.iws
+code/languages/*/build.properties
+code/languages/*/TEST*.xml
+
+doc_gen/
+gen/
+
+# -----------------------------------------------------------
+# GRADLE
+# -----------------------------------------------------------
+.gradle/
+gradle.properties
+action-checker/testdata/actions.json
+
+
+
+.gradle/
+/build/
+workspace.xml
+
+
+# -----------------------
+solutions/ANTLR.persistence.build/classes_gen/ANTLR/persistence/build/ANTLR.xml
+solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/ANTLR.xml

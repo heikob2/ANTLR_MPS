@@ -1,4 +1,4 @@
-grammar A{
+grammar A;
 sequence
 	:	section;
 
@@ -78,4 +78,3 @@ SYMBOL
 	| 	|	'\''
 ;
 
-}
