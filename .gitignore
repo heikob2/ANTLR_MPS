@@ -60,6 +60,7 @@ code/languages/*/build.properties
 code/languages/*/TEST*.xml
 
 doc_gen/
+gen/
 
 # -----------------------------------------------------------
 # GRADLE
